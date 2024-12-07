@@ -131,14 +131,14 @@ o	formatar_mensagens(mensagem)
 o	Exemplo: Todas as mensagens são formatadas de forma que exiba para o usuario a origem, destino e o conteudo da mensagem. O destino pode ser para todos (broadcast) ou privadas (unicast).
         
 ## Cliente
-   ### •	Permite criar salas, entrar em salas, enviar mensagens e listar informações do servidor.
-   ### •	Após registrar o usuario será iniciado um primeiro menu com as seguintes opçoes:
+### •	Permite criar salas, entrar em salas, enviar mensagens e listar informações do servidor.
+### •	Após registrar o usuario será iniciado um primeiro menu com as seguintes opçoes:
 1) Criar sala - self.criar_sala()
 2) Entrar em uma sala - self.entrar_na_sala()
 3) Listar salas - self.listar_salas()
 4) Encerrar - print( Encerrando...") - break
 
-   ### •	Após o primeiro menu acima será iniciado o segundo menu com as seguintes opçoes:
+### •	Após o primeiro menu acima será iniciado o segundo menu com as seguintes opçoes:
 1) Enviar mensagem - self.enviar_mensagem()
 2) Sair da sala - self.sair_da_sala()
 3) Listar usuários - self.listar_usuarios()
