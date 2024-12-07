@@ -75,60 +75,60 @@ chat_system/
 # Detalhamento das Funcionalidades
 ## Binder
    ### •	Registrar Procedimento:
-     o	register_procedure(procedure_name, address, port)
+o	register_procedure(procedure_name, address, port)
      
-     o	Exemplo: Registra o método criar_sala disponível no servidor.
+o	Exemplo: Registra o método criar_sala disponível no servidor.
      
    ### •	Descobrir Procedimento:
-      o	lookup_procedure(procedure_name)
+o	lookup_procedure(procedure_name)
       
-      o	Exemplo: Retorna o endereço e a porta do método remoto enviar_messagem.
+o	Exemplo: Retorna o endereço e a porta do método remoto enviar_messagem.
       
 ## Servidor
    ### •	Registrar Usuario:
-        o	registrar_usuario(nomeUsuario)
+o	registrar_usuario(nomeUsuario)
         
-        o	Exemplo: registra um novo usuario quando acessa o chat, verificando se existe nome igual.
+o	Exemplo: registra um novo usuario quando acessa o chat, verificando se existe nome igual.
         
    ### •	Criar Sala:
-        o	criarSala(nomeSala)
+o	criarSala(nomeSala)
         
-        o	Exemplo: input("Digite o nome da sala: ") = Sala 2; cria uma nova sala com o nome e número digitado.
+o	Exemplo: input("Digite o nome da sala: ") = Sala 2; cria uma nova sala com o nome e número digitado.
         
    ### •	Entrar em Sala:
-        o	entrar_sala(nomeUsuario, nomeSala)
+o	entrar_sala(nomeUsuario, nomeSala)
         
-        o	Exemplo: entrar_sala("Pedro", "Sala 2") adiciona o usuário "Pedro" à Sala 2.
+o	Exemplo: entrar_sala("Pedro", "Sala 2") adiciona o usuário "Pedro" à Sala 2.
         
    ### •	Enviar Mensagem:
-        o	enviar_mensagem(nomeUsuario, salaAtual, messagem, destinatario)
+o	enviar_mensagem(nomeUsuario, salaAtual, messagem, destinatario)
         
-        o	Exemplo: Envia mensagens públicas (broadcast) ou privadas (unicast).
+o	Exemplo: Envia mensagens públicas (broadcast) ou privadas (unicast).
         
    ### •	Listar Salas:
-        o	listar_salas()
+o	listar_salas()
         
-        o	Exemplo: Retorna todas as salas ativas.
+o	Exemplo: Retorna todas as salas ativas.
         
    ### •	Listar Usuarios:
-        o	listar_usuarios()
+o	listar_usuarios()
         
-        o	Exemplo: Retorna todos os usuarios conectados na sala atual.
+o	Exemplo: Retorna todos os usuarios conectados na sala atual.
         
    ### •	Sair da Sala:
-        o	sair_da_sala()
+o	sair_da_sala()
         
-        o	Exemplo: sair_da_sala(nomeUsuario) o usuario sai da sala atual e pode criar ou entrar em outra sala.
+o	Exemplo: sair_da_sala(nomeUsuario) o usuario sai da sala atual e pode criar ou entrar em outra sala.
         
    ### •	Buscar Mensagens:
-        o	receber_mensagens(nomeUsuario, salaAtual)
+o	receber_mensagens(nomeUsuario, salaAtual)
         
-        o	Exemplo: Periodicamente busca e exibe para o usuario as 50 últimas mensagens da sala atual que ele estiver conectado.
+o	Exemplo: Periodicamente busca e exibe para o usuario as 50 últimas mensagens da sala atual que ele estiver conectado.
         
    ### •	Formatar Mensagens:
-        o	formatar_mensagens(mensagem)
+o	formatar_mensagens(mensagem)
         
-        o	Exemplo: Todas as mensagens são formatadas de forma que exiba para o usuario a origem, destino e o conteudo da mensagem. O destino pode ser para todos (broadcast) ou privadas (unicast).
+o	Exemplo: Todas as mensagens são formatadas de forma que exiba para o usuario a origem, destino e o conteudo da mensagem. O destino pode ser para todos (broadcast) ou privadas (unicast).
         
 ## Cliente
    ### •	Permite criar salas, entrar em salas, enviar mensagens e listar informações do servidor.
@@ -139,10 +139,10 @@ chat_system/
 4) Encerrar - print( Encerrando...") - break
 
    ### •	Após o primeiro menu acima será iniciado o segundo menu com as seguintes opçoes:
-   1) Enviar mensagem - self.enviar_mensagem()
-   2) Sair da sala - self.sair_da_sala()
-   3) Listar usuários - self.listar_usuarios()
-   4) Encerrar - print( Encerrando...") - break
+1) Enviar mensagem - self.enviar_mensagem()
+2) Sair da sala - self.sair_da_sala()
+3) Listar usuários - self.listar_usuarios()
+4) Encerrar - print( Encerrando...") - break
           
 # Exemplo de Uso
 ## 1.	Inicie o sistema e execute o cliente:
